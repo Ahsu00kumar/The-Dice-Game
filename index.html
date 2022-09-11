@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dice</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata">
+
+
+  <style>
+    body {
+      background-color: rgb(30, 30, 30);
+    }
+
+    div:nth-child(1) {
+      font-family: 'Crimson Pro', serif;
+    }
+
+    div:nth-child(2) {
+      font-family: 'Literata’, serif;
+
+    }
+
+    h1 {
+      font-size: 8vw;
+      margin: 4% auto 5% auto;
+      text-align: center;
+    }
+
+    .part-1 {
+      width: 50%;
+      float: left;
+    }
+
+    .part-2 {
+      width: 50%;
+      float: right;
+    }
+
+    .player1 {
+
+      margin: 2% 20% 2% 50%;
+      text-align: center;
+      font-size: 3vw;
+    }
+
+    .player2 {
+      margin: 2% 20% 2% 25%;
+      text-align: center;
+      font-size: 3vw;
+    }
+
+    .part-1 img {
+      width: 20vw;
+      margin: 2% 20% 2% 38%;
+      border: none;
+      border-radius: 8%;
+
+    }
+
+    .part-2 img {
+      width: 20vw;
+      margin: 2% 20% 2% 12%;
+      border: none;
+      border-radius: 8%;
+
+    }
+
+    .btn {
+      text-align: center;
+      margin-left: 38vw;
+      margin-top: 4%;
+    }
+
+    @media (max-width:1200px) {
+      .part-1 img {
+        width: 17vw;
+        margin: 2% 20% 2% 37%;
+        border: none;
+        border-radius: 8%;
+
+      }
+    
+      .part-2 img {
+        width: 17vw;
+        margin: 2% 20% 2% 12%;
+        border: none;
+        border-radius: 8%;
+
+      }
+
+      .btn {
+
+        text-align: center;
+        margin-top: 4%;
+      }
+    }
+      @media (max-width:768px) {
+        .btn {
+          margin-left: 28vw;
+        }
+      }
+        @media (max-width:625px) {
+          .btn {
+            margin-left: 40vw;
+
+          }
+        }
+
+          @media (max-width:480px) {
+            .btn {
+              margin-left: 35vw;
+
+            }
+          }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 class="text-info">REFRESH & DICE ME</h1>
+    <div class="group">
+      <div class="part-1">
+        <div class="label">
+          <labal class="text-light player1">Player 1</labal>
+        </div>
+        <div class="img">
+          <img src="dice-image/dice1.jpg" alt="dice-image">
+        </div>
+
+      </div>
+      <div class="part-2">
+        <div class="label">
+          <labal class="text-light player2">Player 2</labal>
+        </div>
+        <div class="img">
+          <img src="dice-image1/dice1.jpg" alt="dice-image">
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-outline-primary" onclick="window.location.reload();">Click me</button>
+
+  </div>
+
+
+
+  <script src="javascript.js"></script>
+</body>
+
+</html>
